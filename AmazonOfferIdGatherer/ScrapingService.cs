@@ -34,9 +34,9 @@ namespace AmazonOfferIdGatherer
             //in a future release update with dynamic proxy info
 
             //WebProxy myProxy = new WebProxy();
-            //Uri newUri = new Uri("http://residential.bypassproxies.io:7777", false);
+            //Uri newUri = new Uri("", false);
             //myProxy.Address = newUri;
-            //myProxy.Credentials = new NetworkCredential("customer-tt_bp_iy_3448-sessid-xrFBXP58o", "Bp1qmuzzx1");
+            //myProxy.Credentials = new NetworkCredential("", "");
             //_browser.Proxy = myProxy;
             WebPage webpage = await _browser.NavigateToPageAsync(new Uri(_url));
             HtmlNode htmlNode = webpage.Html;
